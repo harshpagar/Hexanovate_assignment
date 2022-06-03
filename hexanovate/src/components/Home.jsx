@@ -22,8 +22,8 @@ console.log(movies)
     return(
         <>
             <h1>Movies</h1>
-            
-            <div className='main' >
+            <input type="search" placeholder="Search"></input>
+            <section className='main' >
 
                 {filter.map((el) => {
                     return ( 
@@ -32,10 +32,11 @@ console.log(movies)
                            <div className='img'>
                                <img src = {el.poster} alt ="images"></img>
                            </div>
-                           <span>{el.title}</span>
-                           <span>{el.genre}</span>
-                           <span>{el.imdbRating}</span>
-                           <span>{el.released}</span>
+                           
+                           <span className='title'>{el.title}</span><br/>
+                           <span className='genre'>{el.genre}</span><br/>
+                           <span className='imdb'>{el.imdbRating}</span><br/>
+                           <span className='rel'>{el.released}</span>
 
                        </div>
                        
@@ -43,7 +44,7 @@ console.log(movies)
                     </>
                     )
                 })}
-            </div>
+            </section>
             
         </>
     )
