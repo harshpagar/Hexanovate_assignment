@@ -3,11 +3,11 @@ import '../styles/Home.css'
 export const Home = () => {
 
 const [movies,setMovies] =useState([]);
-const [filter,setFilter] = useState([])
 
 useEffect(() => {
     fetchMovies();
 },[])
+
 
 const fetchMovies = () => {
     fetch ("https://hexanovate-1oc3v5uf6-thephenom1708.vercel.app/api/movies")
@@ -15,7 +15,6 @@ const fetchMovies = () => {
     .then((res) => {
       console.log(res)
       setMovies(res)
-      setFilter(res)  
     })
 };
 console.log(movies)
@@ -25,7 +24,7 @@ console.log(movies)
             <input type="search" placeholder="Search"></input>
             <section className='main' >
 
-                {filter.map((el) => {
+                {movies.map((el) => {
                     return ( 
                     <>
                         <div className='container'>
