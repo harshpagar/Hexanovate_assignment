@@ -1,25 +1,22 @@
-.main{
-    margin-top: 20px;;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap:40px;
-    justify-content: space-around;
-    width:1300px;
-    margin-left: 100px;    
+.main {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+  justify-content: space-around;
+  width: 1300px;
+  margin-left: 100px;
 }
-.container{
-    gap:5px;
-    text-align: center;
-    border-radius: 5px;
-    padding: 1em;
-    box-shadow: rgb(29, 31, 31) 0px 2px 8px 0px;
-    
-
+.container {
+  gap: 5px;
+  text-align: center;
+  border-radius: 5px;
+  padding: 1em;
+  box-shadow: rgb(29, 31, 31) 0px 2px 8px 0px;
 }
-.img{
-    margin-top: 12px;
-  
+.img {
+  margin-top: 12px;
 }
-.title{
-    font-size:x-large;
+.title {
+  font-size: x-large;
 }
